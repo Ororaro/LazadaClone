@@ -1,0 +1,46 @@
+.control-footer{
+    padding-top: 2rem;
+    border-top:2px solid #e2e2e2
+}
+.footer-bg{
+    background-color: #f5f5f5;
+}
+.footer-item h5{
+    color:#0f136d;
+    font-size: 14px;
+}
+.icon-footer{
+    display: flex;
+}
+.icon-footer h4{
+    font-size: 16px;
+    color:#f36f36;
+    font-weight: 300;
+}
+.icon-footer h5{
+    font-size: 14px;
+    color:#0f136d;
+}
+.text-footer{
+    padding: 0 10px;
+}
+.payment{
+    padding-top: 15px;
+}
+.payment-method{
+    display: flex;
+    padding-top: 15px ;
+}
+.payment-method .payment-item{
+    padding-left: 10px;
+}
+
+.deliver-icon{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(80px,1fr));
+    padding-top: 15px ;
+ 
+}
+.item-icon img{
+    width: 100%;
+}

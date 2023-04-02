@@ -1,0 +1,30 @@
+.control{
+  position: relative;
+}
+.slice img{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+}
+.container-dot{
+    position: absolute;
+    bottom: 0;
+    left:50%;
+}
+.dot.active{
+    background: rgb(32, 32, 32);
+    transition: 1s;
+  }
+.dot{
+    background-color: #ddd;
+    margin: 10px 5px;
+  }
+ 
+

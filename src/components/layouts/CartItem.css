@@ -1,0 +1,21 @@
+.BoxCart{
+    display: flex;
+    align-items:flex-end;
+}
+.BoxCart h4{
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 3rem;
+}
+.BoxCart img{
+    width: 140px;
+    height: auto;
+    object-fit: cover;
+}
+.BoxCart h5{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.manageCancel .MuiButtonBase-root{
+    width: 100%;
+}

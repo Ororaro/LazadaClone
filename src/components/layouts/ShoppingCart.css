@@ -1,0 +1,9 @@
+.shopCart{
+    width: 550px;
+}
+
+@media (max-width:500px){
+    .shopCart{
+        width: 85%;
+    }
+}

@@ -2,9 +2,9 @@ import { Box, Button, Grid, Typography } from '@mui/material'
 import { Container } from '@mui/system'
 import React, { useState, useEffect } from 'react'
 import './Section2.css'
-import { brandProduct, categories, OldProduct } from '../../mock/dataProduct'
-import Storeitem from './Storeitem'
-import Olditem from './Olditem'
+import { brandProduct, categories, ShowProduct } from '../../mock/dataProduct'
+import ShopitemCard from './ShopitemCard'
+import ShowitemCard from './ShowitemCard'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import cart from '../../mock/Cart'
 export const Section2 = () => {
@@ -46,7 +46,7 @@ export const Section2 = () => {
         </Box>
         <Box className="prd-detail">
           {cart.map((data, index) => {
-            return <Storeitem key={data.id}{...data} />
+            return <ShopitemCard key={data.id}{...data} />
           })}
         </Box>
         <Box className="brand-Product">
@@ -91,8 +91,8 @@ export const Section2 = () => {
           </Box>
           <Typography variant='h5' sx={{ marginTop: '22px', fontSize: '22px' }}>Just For You</Typography>
           <Box className="old-detail">
-            {OldProduct.map((data, index) => {
-              return <Olditem {...data} />
+            {ShowProduct.map((data, index) => {
+              return <ShowitemCard {...data} />
             })}
           </Box>
           <Box className="btn-load">

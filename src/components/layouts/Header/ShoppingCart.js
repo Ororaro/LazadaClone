@@ -1,8 +1,8 @@
 import React from 'react'
 import { Box, Button, Grid, Typography } from '@mui/material'
-import { useShoppingCart } from '../../management/context'
+import { useShoppingCart } from '../../../management/context'
 import CartItem from './CartItem'
-import Cart from '../mock/Cart'
+import Cart from '../../mock/Cart'
 import {
   Dialog,
   DialogActions,

@@ -1,11 +1,15 @@
-.control{
+.control {
   position: relative;
+  
 }
-.slice img{
-    height: 400px;
-    width: 100%;
-    object-fit: contain;
+
+.slice img {
+  padding-top: 5.5rem;
+  width: 100%;
+  display: block;
+  
 }
+
 .dot {
   height: 15px;
   width: 15px;
@@ -13,18 +17,19 @@
   border-radius: 50%;
   display: inline-block;
 }
-.container-dot{
-    position: absolute;
-    bottom: 0;
-    left:50%;
-}
-.dot.active{
-    background: rgb(32, 32, 32);
-    transition: 1s;
-  }
-.dot{
-    background-color: #ddd;
-    margin: 10px 5px;
-  }
- 
 
+.container-dot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.dot.active {
+  background: rgb(32, 32, 32);
+  transition: 1s;
+}
+
+.dot {
+  background-color: #ddd;
+  margin: 10px 5px;
+}

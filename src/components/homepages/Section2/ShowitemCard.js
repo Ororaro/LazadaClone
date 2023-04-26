@@ -18,7 +18,7 @@ const Olditem = ({ image, description, price, quantity, rate, oldprice, cheap })
                 <Box className="old-text">
                     <Typography variant='h3'>{description}</Typography>
                     <Typography variant='h4'> ฿{discount()} </Typography>
-                    <Box className="percentage">
+                    <Box className="percentage" sx={{justifyContent:'flex-start'}}>
                         <Typography variant='h5'> ฿{formatNumber(oldprice)} </Typography>
                         <Typography variant='h3' sx={{fontSize:'14px !important'}}>-{cheap}%</Typography>
                     </Box>

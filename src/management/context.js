@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from "react";
-import ShoppingCart from "../components/layouts/ShoppingCart";
-import CartItem from "../components/layouts/CartItem";
+import ShoppingCart from "../components/layouts/Header/ShoppingCart";
+import CartItem from "../components/layouts/Header/CartItem";
 const shoppingCartContext = createContext({})
 export function useShoppingCart(){
     return useContext(shoppingCartContext)

@@ -91,7 +91,7 @@ export const categories = [
         image:'https://lzd-img-global.slatic.net/g/p/88acc2f5abc23cb238cca5fad7fe2989.jpg_170x170q80.jpg_.webp'
     },
 ]
-export const OldProduct = [
+export const ShowProduct = [
     {
         id:1,
         image:'https://lzd-img-global.slatic.net/g/p/96e69d9303333ab110d34f7340261123.jpg_400x400q80.jpg_.webp',

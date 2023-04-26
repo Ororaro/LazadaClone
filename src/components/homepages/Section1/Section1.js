@@ -10,7 +10,6 @@ const Section1 = () => {
   const movedot = index => {
     setSlide(index)
   }
-  console.log(slide)
   useEffect(() => {
     if (slide === 0) {
       setBg('rgb(119, 181, 255)')
@@ -20,14 +19,16 @@ const Section1 = () => {
     }
   })
   return (
-    <Box className="control">
+    <Box className="control" sx={{ marginBottom: { md: '0', sm: '0', xs: '2rem' } }}>
       {dataSlider.map((data, index) => {
         return (
           <Box className="slice" key={index}>
             {index === slide && (
               <Box>
-                <Box style={{ backgroundColor: bg }}>
-                  <img src={data.image} />
+                <Box sx={{ backgroundColor: { md: bg, sm: bg, xs: 'none' } }}>
+                  <Container maxWidth="lg">
+                    <img src={data.image} />
+                  </Container>
                 </Box>
               </Box>
             )}

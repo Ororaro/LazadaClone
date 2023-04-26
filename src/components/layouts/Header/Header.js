@@ -8,18 +8,18 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { Container } from '@mui/system';
 import { Typography } from '@mui/material';
-import { useShoppingCart } from '../../management/context';
+import { useShoppingCart } from '../../../management/context';
 import CartItem from './CartItem';
 import ShoppingCart from './ShoppingCart';
 
 function DrawerAppBar() {
     const { openCart,cartQuantity } = useShoppingCart()
     return (
-        <Box sx={{ padding: '50px 0' }}>
+        <Box >
             <AppBar component="nav">
                 <Container maxWidth="lg">
                     <Box className="control-head" >
-                        <img src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT42iI98hUj6QaEU_ioZwxQc9CrOtNCkaMGiQelzvCAUWcm7MwqYkzV7EWJPm8n73jHRsE&usqp=CAU`} width="13%" />
+                        <img src={`https://logos-world.net/wp-content/uploads/2022/06/Lazada-Logo.png`} width="12%" />
                         <Box className="search" >
                             <input type='text' placeholder='Search in Lazada' />
                             <Box className="search-cart">
@@ -33,7 +33,7 @@ function DrawerAppBar() {
                             </Box>
                         </Box>
                         <Box className="icon-head">
-                            <img src={`https://laz-img-cdn.alicdn.com/images/ims-web/TB18s7ESBr0gK0jSZFnXXbRRXXa.jpg`} width="70%" />
+                            <img src={`https://laz-img-cdn.alicdn.com/images/ims-web/TB18s7ESBr0gK0jSZFnXXbRRXXa.jpg`} width="90%" />
                         </Box>
                     </Box>
                 </Container>

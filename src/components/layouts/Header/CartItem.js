@@ -1,6 +1,6 @@
 import React from 'react'
-import { useShoppingCart } from '../../management/context'
-import cart from '../mock/Cart'
+import { useShoppingCart } from '../../../management/context'
+import cart from '../../mock/Cart'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import './CartItem.css'
 import AddIcon from '@mui/icons-material/Add';
@@ -15,15 +15,15 @@ const CartItem = ({ id, quantity, openCart }) => {
   }
   let total = item.price * quantity
   return (
-        <Box className="BoxCart" sx={{ padding: '10px' }}>
-          <img src={item.image} />
-          <Typography variant='h5'>x{quantity}</Typography>
-          <Typography variant='h4'>{item.description}</Typography>
-          <Box className="manageCancel">
-            <Typography variant='h5'>฿{formatNumber(total)}</Typography>
-            <Button onClick={() => removeFromCart(id)}><CloseIcon /></Button>
-          </Box>
-        </Box>
+    <Box className="BoxCart" sx={{ padding: '10px' }}>
+      <img src={item.image} />
+      <Typography variant='h5'>x{quantity}</Typography>
+      <Typography variant='h4'>{item.description}</Typography>
+      <Box className="manageCancel">
+        <Typography variant='h5'>฿{formatNumber(total)}</Typography>
+        <Button onClick={() => removeFromCart(id)}><CloseIcon /></Button>
+      </Box>
+    </Box>
   )
 }
 

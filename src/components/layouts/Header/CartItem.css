@@ -1,7 +1,4 @@
-.BoxCart{
-    display: flex;
-    align-items:flex-end;
-}
+
 .BoxCart h4{
     width: 100%;
     font-size: 18px;

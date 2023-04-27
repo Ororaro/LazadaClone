@@ -32,7 +32,7 @@ function DrawerAppBar() {
                                 <Typography variant='h5' style={{ color: 'red' }}>{cartQuantity}</Typography>
                             </Box>
                         </Box>
-                        <Box className="icon-head">
+                        <Box className="icon-head" sx={{display:{md:'flex',sm:'flex',xs:'none'}}}>
                             <img src={`https://laz-img-cdn.alicdn.com/images/ims-web/TB18s7ESBr0gK0jSZFnXXbRRXXa.jpg`} width="90%" />
                         </Box>
                     </Box>

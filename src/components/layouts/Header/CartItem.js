@@ -15,19 +15,19 @@ const CartItem = ({ id, quantity, openCart }) => {
   }
   let total = item.price * quantity
   return (
-    <Box className="BoxCart" sx={{ padding: '10px' }}>
+    <Box className="BoxCart" sx={{ padding: '10px', borderBottom: '1px solid gray' }}>
       <Grid container spacing={1}>
         <Grid item md={4} sm={4} xs={12}>
           <img src={item.image} />
-          <Typography variant='h5' sx={{fontWeight:'700'}}>x{quantity}</Typography>
+          <Typography variant='h5' sx={{ fontWeight: '700' }}>x{quantity}</Typography>
         </Grid>
         <Grid item md={4} sm={4} xs={12}>
           <Typography variant='h4'>{item.description}</Typography>
         </Grid>
-          <Box className="manageCancel" sx={{ display: 'flex' ,alignItems:'center',alignContent:'center'}}>
-            <Typography variant='h5'>฿{formatNumber(total)}</Typography>
-            <Button onClick={() => removeFromCart(id)}><CloseIcon /></Button>
-          </Box>
+        <Grid item md={4} sm={4} xs={12}  container alignItems="center" justifyContent="space-between">
+            <Typography variant='h5'>฿ {formatNumber(total)}</Typography>
+            <CloseIcon sx={{ cursor: 'pointer', color: 'red' }} onClick={() => removeFromCart(id)} />
+        </Grid>
       </Grid>
     </Box>
   )

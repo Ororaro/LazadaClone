@@ -24,7 +24,7 @@ const ShoppingCart = ({ isOpen }) => {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle sx={{ textAlign: 'center', fontSize: '50px', fontWeight: "600" }} id="alert-dialog-title">{"SHOP CART"}</DialogTitle>
+        <DialogTitle sx={{ textAlign: 'center', fontSize:{md:'50px',sm:'50px',xs:'35px'}, fontWeight: "900" }} id="alert-dialog-title">{"SHOP CART"}</DialogTitle>
           <DialogContent className='shopCart' >
             {cartQuantity > 0 ?
               cartItems.map((data, index) => {
@@ -33,7 +33,7 @@ const ShoppingCart = ({ isOpen }) => {
                 )
               }) :
               <Box >
-                <Typography variant='h3' sx={{ textAlign: 'center', borderTop: '2px solid red', borderBottom: '2px solid red', padding: '20px' }}>Empty!!</Typography>
+                <Typography variant='h3' sx={{ textAlign: 'center', borderTop: '2px solid red', borderBottom: '2px solid red', padding: '20px'}}>Empty!!</Typography>
               </Box>
             }
             {cartQuantity > 0 ?

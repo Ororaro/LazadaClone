@@ -27,18 +27,18 @@ const Cartitem = ({ id, image, description, price, oldprice, cheap }) => {
                         {cartAmount &&
                             <Box className="control-add-minus">
                                 <Box className="icon-add">
-                                    <AddIcon onClick={() => increaseCartQuantity(id)} style={{ fontSize: '16px', color: 'green' }} />
+                                    <AddIcon onClick={() => increaseCartQuantity(id)} style={{ fontSize: '25px', color: 'green' }} />
                                 </Box>
-                                <Typography style={{ fontSize: '14px' }}>{quantity}</Typography>
+                                <Typography style={{ fontSize: '18px' }}>{quantity}</Typography>
                                 <Box className="icon-minus">
-                                    <RemoveIcon onClick={() => decreaseCartQuantity(id)} style={{ fontSize: '16px', color: 'red' }} />
+                                    <RemoveIcon onClick={() => decreaseCartQuantity(id)} style={{ fontSize: '25px', color: 'red' }} />
                                 </Box>
                             </Box>
                         }
                     </Box>
                     <Box className="btn-cart">
                         {cartAmount ?
-                            <Button style={{ color: '#000' }} onClick={() => setCartAmount(!cartAmount)}>- REMOVE</Button>
+                            <Button style={{ color: 'black' }} onClick={() => setCartAmount(!cartAmount)}>- REMOVE</Button>
                             :
                             <Button style={{ color: 'green' }} onClick={() => setCartAmount(!cartAmount)}>+ ADD</Button>}
                     </Box>
